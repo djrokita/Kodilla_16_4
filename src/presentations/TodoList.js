@@ -5,7 +5,7 @@ const TodoList  = props => {
 		return (
 			<li key={item.id}>{item.text}</li>
 		);
-	}
+	});
 	return (
 		<ul>
 			{listItem}

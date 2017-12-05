@@ -2,12 +2,26 @@ import React from "react";
 import uuid from "uuid";
 import style from "./App.css";
 import Title from "./../presentations/Title.js";
+import TodoList from "./../presentations/TodoList.js";
 
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      data: []
+      data: [
+        {
+            id: 1,
+            text: 'clean room'
+        },
+        {
+            id: 2,
+            text: 'wash the dishes'
+        },
+        {
+            id: 3,
+            text: 'feed my cat'
+        }
+      ]
     };
   }
   addTodo(val) {
@@ -26,7 +40,7 @@ class App extends React.Component {
     return (
       <div className={style.TodoApp}>
         <Title counter={this.state.data.length} />
-        Tutaj pojawią się komponenty naszej aplikacji.
+        <TodoList items={this.state.data} />
       </div>
     );
   }

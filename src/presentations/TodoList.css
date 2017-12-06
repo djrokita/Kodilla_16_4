@@ -1,0 +1,16 @@
+.TodoList {
+	list-style: none;
+	padding: 0;
+	font-size: 18px;
+	font-family: 'Arial', sans-serif;
+}
+
+.TodoList li {
+	padding: 10px;
+	border: 1px solid black;
+}
+
+.TodoList li:hover {
+	cursor: pointer;
+	border-color: red;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import uuid from "uuid";
-import style from "./App.css";
+import style from './App.css';
 import Title from "./../presentations/Title.js";
 import TodoList from "./../presentations/TodoList.js";
 
@@ -35,12 +35,13 @@ class App extends React.Component {
   removeTodo(id) {
     const remainder = this.state.data.filter((todo) => todo.id !== id);
     this.setState({ data: remainder });
+    console.log('dupa');
   }
   render() {
     return (
       <div className={style.TodoApp}>
         <Title counter={this.state.data.length} />
-        <TodoList items={this.state.data} />
+        <TodoList items={this.state.data} remove={this.removeTodo.bind(this)}/>
       </div>
     );
   }

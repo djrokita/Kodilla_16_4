@@ -4,14 +4,3 @@
 	font-size: 18px;
 	font-family: 'Arial', sans-serif;
 }
-
-.TodoList li {
-	padding: 10px;
-	border: 1px solid black;
-	text-align: center;
-}
-
-.TodoList li:hover {
-	cursor: pointer;
-	border-color: red;
-}

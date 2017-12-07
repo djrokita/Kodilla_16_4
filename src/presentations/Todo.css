@@ -1,0 +1,10 @@
+.TodoItem {
+	padding: 10px;
+	border: 1px solid black;
+	text-align: center;
+}
+
+.TodoItem:hover {
+	cursor: pointer;
+	border-color: red;
+}

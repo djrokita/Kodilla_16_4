@@ -1,0 +1,25 @@
+.TodoForm input {
+	padding: 5px;
+	border: none;
+	margin: 10px;
+}
+
+.TodoForm input:focus {
+	background: lightgray;
+}
+
+.TodoForm button {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	padding: 5px 10px;
+	cursor: pointer;
+	background-color: #99bdf7;
+	border: none;
+	margin: 10px;
+	color: #fff;
+}
+
+.TodoForm button:active {
+	background-color: #779bd5;
+}

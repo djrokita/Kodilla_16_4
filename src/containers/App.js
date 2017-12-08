@@ -15,15 +15,17 @@ class App extends React.Component {
     };
   }
   addTodo(val) {
-    const todo = {
-      text: val,
-      id: uuid.v4()
-    };
-    const data = [...this.state.data, todo];
-    this.setState({ data });
-    this.setState({
-      input: ''
-    });
+    if (this.state.input.length > 0) {
+      const todo = {
+        text: val,
+        id: uuid.v4()
+      };
+      const data = [...this.state.data, todo];
+      this.setState({ data });
+      this.setState({
+        input: ''
+      });
+    }
   }
   onChangeHandler(event) {
     let task = event.target.value;
